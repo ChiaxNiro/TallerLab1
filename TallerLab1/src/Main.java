@@ -32,6 +32,9 @@ public class Main {
 
     mostrar_matriz(matriz);
         mostrar_fila(matriz);
+        System.out.println();
+        System.out.print("La cantidad de ceros es: ");
+        contador(matriz);
     }
 
     public static int[][] crear_matriz(int filas, int columnas){
@@ -60,6 +63,21 @@ public class Main {
 
 
         }
+
+    }
+
+    public static int contador(int[][] matriz) {
+        int contador = 0;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                if (matriz[i][j] == 0) {
+                    contador++;
+
+                }
+            }
+        }
+        System.out.println(contador);
+        return contador;
 
     }
 
