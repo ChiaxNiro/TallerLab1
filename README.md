@@ -1,1 +1,4 @@
-# TallerLab1
+Se introducira un metodo (tipo scanner) que consulte al usuario por las dimensiones de la matriz, primero las filas, luego las columnas. Este valor sera numeros enteros y correspondera a las dimensiones de esta.
+Para poder llenar la matriz, se crea previamente una lista de numeros entre 0 al 9, que luego sera utilizada mediante un for que recorra la matriz por filas, dentro de este for habra otro for que recorra las columnas y llenara de forma aleatoria la matriz, con un random que tome el indice de la lista de numeros creada previamente y introducira el numero en la matriz
+Para mostrar la matriz se hara un doble for que la recorra, tanto las filas como las columnas, y por cada espacio que recorra, haga un print de estos valores de la matriz, para darle la forma se usara ademas un println.
+Para verificar si la matriz es tipo cero, se hara un doble for por la matriz que verifique los valores cero, por cada espacio que recorra y encuentre 1 cero, un contador se sumara, retornando así un numero entero que indicara la cantidad de ceros en la matriz.
