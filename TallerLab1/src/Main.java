@@ -55,12 +55,12 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.println("Ingrese la fila que desea imprimir");
         int fila = scan.nextInt();
-        for (int i = 0; i <matriz.length ; i++) {
-            System.out.print(matriz[0][i] + " ");
+        for (int i = 0; i < matriz.length; i++) {
+            System.out.print(matriz[fila][i] + " ");
+
+
         }
 
     }
-
-
 
 }
