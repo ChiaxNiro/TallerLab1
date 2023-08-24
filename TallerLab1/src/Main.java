@@ -21,7 +21,6 @@ public class Main {
         int[][] matriz = crear_matriz(filas, columnas); //creacion de la matrtiz con las dimensiones especificadas
 
         for (int i = 0; i < matriz.length; i++) {
-
             for (int j = 0; j < matriz[i].length; j++) {
 
                 Random rand = new Random();
@@ -31,12 +30,8 @@ public class Main {
             }
         }
 
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-
-            }
-        }
-
+    mostrar_matriz(matriz);
+        mostrar_fila(matriz);
     }
 
     public static int[][] crear_matriz(int filas, int columnas){
@@ -44,14 +39,26 @@ public class Main {
 
     }
 
-    public static void mostrar_fila(int[][] matriz, int fila) {
-
-        for (int j = 0; j < matriz[fila].length; j++) {
-            System.out.print(matriz[fila][j] + " ");
+    public static void mostrar_matriz(int[][] matriz) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j]+ " ");
+            }
+            System.out.println();
         }
-        System.out.println();
+
+
 
         //verificar si la matriz es tipo cero//
+    }
+    public static void mostrar_fila(int[][] matriz) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Ingrese la fila que desea imprimir");
+        int fila = scan.nextInt();
+        for (int i = 0; i <matriz.length ; i++) {
+            System.out.print(matriz[0][i] + " ");
+        }
+
     }
 
 
